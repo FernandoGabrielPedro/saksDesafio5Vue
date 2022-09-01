@@ -2,15 +2,15 @@
   <div>
     <div v-if="administradores.length > 1">
       <div v-if="showLabel">
-        Usuário*
+        Administrador*
       </div>
       <imobiliaria-select
         v-bind="$attrs"
-        name="usuário"
+        name="administrador"
         rules="required"
         :class="showLabel ? 'mt--md' : ''"
         @on-change="onChange">
-        <option :value="null" disabled>Selecione um usuário...</option>
+        <option :value="null" disabled>Selecione um administrador...</option>
         <option
           v-for="administrador in administradores"
           :key="administrador.id"
@@ -21,9 +21,9 @@
     </div>
     <div v-else class="mb-3 mt-4">
       <imobiliaria-p color="danger">
-        *Você não possui usuários cadastrados
+        *Você não possui administradores cadastrados
         <imobiliaria-button @click="onCreate">
-          Criar Usuário
+          Criar Administrador
         </imobiliaria-button>
       </imobiliaria-p>
     </div>

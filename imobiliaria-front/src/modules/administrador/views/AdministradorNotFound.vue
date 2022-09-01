@@ -3,9 +3,9 @@
     <template #content>
       <div class="d-flex align-items--center direction--column">
         <imobiliaria-icon size="xxl" icon="question-octagon" />
-        <imobiliaria-header>Usuário não encontrado</imobiliaria-header>
+        <imobiliaria-header>Administrador não encontrado</imobiliaria-header>
         <imobiliaria-p>
-          Erro ao localizar o usuário.
+          Erro ao localizar o administrador.
         </imobiliaria-p>
         <br>
         <imobiliaria-button theme="primary" @click="goToBasePage()">

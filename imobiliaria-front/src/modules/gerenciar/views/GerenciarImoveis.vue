@@ -45,7 +45,7 @@
               </el-dropdown>
               <imobiliaria-modal-delete
                 v-if="showModal(imovel)"
-                content="Você realmente deseja excluir o usuário?"
+                content="Você realmente deseja excluir o imóvel?"
                 @close="setDeleteImovel(null)"
                 @confirm="onDeleteImovel(imovel)">
               </imobiliaria-modal-delete>
@@ -106,7 +106,7 @@ export default {
         .then(() => {
           this.$router.go(0);
         })
-        .catch(() => toastError('Não foi possível excluir o usuário'));
+        .catch(() => toastError('Não foi possível excluir o imóvel'));
     },
   },
 };

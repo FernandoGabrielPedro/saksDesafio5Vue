@@ -1,13 +1,25 @@
 @import '../variables/fonts';
 @import '../variables/margins';
 
-.el-tabs__nav-wrap::after,
+.el-tabs__nav-wrap::after {
+  height: 1px;
+}
+
 .el-tabs__active-bar {
   height: 1px;
+  background-color: #00ff7f;
 }
 
 .el-tabs__item {
   font-size: $font-size-lg;
+
+  &:hover {
+    color: #00ff7f;
+  }
+}
+
+.el-tabs__item.is-active {
+  color: #00ff7f !important;
 }
 
 .el-tabs__header {

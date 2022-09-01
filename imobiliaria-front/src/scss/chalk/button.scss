@@ -16,7 +16,15 @@
   ) !default;
 
   & {
+    color: #09703d;
+    background-color: #54ffa9;
+    border-width: 0px;
     font-size: $font-size-md;
+
+    &:hover {
+      color: #54ffa9;
+      background-color: #09703d;
+    }
   }
 
   &.el-button--xs {

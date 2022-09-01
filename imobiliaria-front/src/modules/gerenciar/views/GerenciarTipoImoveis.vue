@@ -103,7 +103,7 @@ export default {
         .then(() => {
           this.$router.go(0);
         })
-        .catch(() => toastError('Não foi possível excluir o usuário'));
+        .catch(() => toastError('Não foi possível excluir o tipo de imóvel'));
     },
   },
 };

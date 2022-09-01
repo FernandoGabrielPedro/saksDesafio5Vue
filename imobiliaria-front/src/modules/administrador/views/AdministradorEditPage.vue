@@ -2,10 +2,10 @@
   <imobiliaria-single-content-layout container-size="lg">
     <template #content>
       <imobiliaria-header v-if="isEditing">
-        Editar Usuário
+        Editar Administrador
       </imobiliaria-header>
       <imobiliaria-header v-else>
-        Criar Usuário
+        Criar Administrador
       </imobiliaria-header>
       <imobiliaria-administrador-edit-inputs @save="saveAdministrador" />
     </template>
@@ -77,7 +77,7 @@ export default {
         .then(data => {
           goToOpenAdministrador(this.$router, data || this.administrador);
         })
-        .catch(() => toastError('Erro ao salvar o usuário'));
+        .catch(() => toastError('Erro ao salvar o administrador'));
     },
   },
 };
